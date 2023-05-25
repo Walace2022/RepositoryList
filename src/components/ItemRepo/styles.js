@@ -14,7 +14,7 @@ export const ItemContainer = styled.div`
         color:#FAFAFA60
     }
 
-    a.remove{
+    .remove{
         color:#FF0000;
         display:inline-block;
         background-color:#FAFAFA;
