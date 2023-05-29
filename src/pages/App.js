@@ -4,6 +4,7 @@ import ItemRepo from "../components/ItemRepo";
 import Button from "../components/Button";
 import { Container } from "./styles";
 import { api } from "../services/api";
+import github_logo from "../assets/img/github_logo.png";
 
 function App() {
 const [currentRepo, setCurrentRepo] = useState('');
@@ -38,8 +39,8 @@ const handleRemoveRepo = (id) => {
 
   return (
     <Container>
-      <span>Ola</span>
-      <Input value={currentRepo} onChange={(e) => setCurrentRepo(e.target.value)}/>
+      <img src={github_logo} width={75} height={75} alt="github logo"/>
+      <Input value={currentRepo} onChange={(e) => setCurrentRepo(e.target.value)} placeholder={'nomedoUsuario/nomedoRepositorio'}/>
       <Button onClick={handleSearchRepo} text='Buscar'/>
       {repos.map(repo => <ItemRepo handleRemoveRepo={handleRemoveRepo} repo={repo} />)}
     </Container>

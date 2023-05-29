@@ -16,6 +16,7 @@ export const InputContainer = styled.div`
         padding: 0 1rem;
         height:inherit;
         border-radius:20px;
+        color:#fff;
     }
 
 `

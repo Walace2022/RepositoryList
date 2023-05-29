@@ -8,7 +8,7 @@ export const ButtonContainer = styled.button`
     height:62px;
     width:80%;
 
-    margin-top:20px;
+    margin-bottom:20px;
 
     &:hover{
         background-color:#FAFAFA60;

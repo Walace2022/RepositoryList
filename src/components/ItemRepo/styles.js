@@ -23,6 +23,7 @@ export const ItemContainer = styled.div`
         text-align:center;
         text-decoration:none;
         margin-top:.5rem;
+        margin-right:.5rem;
     }
 
     hr{
